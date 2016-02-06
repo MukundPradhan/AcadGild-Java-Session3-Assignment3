@@ -7,9 +7,15 @@ public class RandomNum {
 
 	public void isRandomNo(double input) {
 		double max=input-1,min=0, randomNo;
+		if(min>max) {
+			System.out.println("Please enter a number > 0 ");
+		}
+		else {
+			
 		randomNo=(max-min)*(double)Math.random();
 		Math.round(randomNo);
 		System.out.println("The Random Number is : " + randomNo);
+		}
 	}
 	
 	
